@@ -1,9 +1,5 @@
 package com.udemy.backendninja.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
 public class ContactModel {
 	
 	private int id;
