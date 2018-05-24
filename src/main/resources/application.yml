@@ -1,6 +1,9 @@
 banner:
   location: classpath:/banner/banner.txt
   
+server:
+  port: 8090
+  
 spring:
   thymeleaf:
     mode: HTML5
@@ -8,15 +11,22 @@ spring:
     cache: false
     
   datasource:
-    url: jdbc:mysql://localhost:3306/mydb?useSSl=false
-    username: root
-    password: jp10210159jp
+#    url: jdbc:mysql://localhost:3306/mydb?useSSl=false
+#    username: root
+#    password: jp10210159jp
+     url: jdbc:h2:mem:parqueadero069
+     driverClassName: org.h2.Driver
+     username: sa
+     password:
     
   jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
     show-sql: true
     hibernate:
       ddl-auto: update
       naming:
         strategy: org.hibernate.cfg.ImprovedNamingStrategy
-      
+  h2:
+    console:
+      enabled: true
       
