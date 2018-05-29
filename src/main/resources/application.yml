@@ -4,6 +4,8 @@ banner:
 server:
   port: 8090
   
+
+
 spring:
   thymeleaf:
     mode: HTML5
@@ -11,13 +13,14 @@ spring:
     cache: false
     
   datasource:
-#    url: jdbc:mysql://localhost:3306/mydb?useSSl=false
-#    username: root
-#    password: jp10210159jp
-     url: jdbc:h2:mem:parqueadero069
+     url: jdbc:h2:mem:backendninja
      driverClassName: org.h2.Driver
      username: sa
      password:
+     
+#    url: jdbc:mysql://localhost:3306/mydb?useSSl=false
+#    username: root
+#    password: jp10210159jp
     
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
